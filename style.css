@@ -12,4 +12,9 @@ html, body {
 
   }
 
-  #score{color: purple}
+  #score {
+      color: purple;
+      font-size: large; 
+
+
+}
