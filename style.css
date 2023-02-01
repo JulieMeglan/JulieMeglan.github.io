@@ -13,7 +13,7 @@ html, body {
   }
 
   #score {
+      background-color: lightgrey; 
       color: purple;
       font-size: large; 
-      font: arial;
 }
