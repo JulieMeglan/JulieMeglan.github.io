@@ -14,5 +14,6 @@ html, body {
 
   #score {
       color: purple;
-      font-size: 20%; 
+      font-size: large; 
+      font: arial;
 }
