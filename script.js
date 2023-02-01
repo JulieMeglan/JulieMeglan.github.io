@@ -95,9 +95,9 @@ function loop() {
   }
   
   //adding score
-  let scorePlayer1
-  let scorePlayer2
-  const score = document.getElementById('scoreboard');
+  let scorePlayer1 = 0; 
+  let scorePlayer2 = 0; 
+  const score = document.getElementById('score');
   
   // reset ball if it goes past paddle (but only if we haven't already done so)
   if ( (ball.x < 0 || ball.x > canvas.width) && !ball.resetting) {
