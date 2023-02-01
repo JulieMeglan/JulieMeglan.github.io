@@ -13,7 +13,6 @@ html, body {
   }
 
   #score {
-      background-color: lightgrey; 
-      color: purple;
-      font-size: large; 
+      color: lightblue;
+      font-size: 10px; 
 }
