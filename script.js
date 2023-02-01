@@ -169,7 +169,7 @@ document.addEventListener('keyup', function(e) {
   }
 }
  // adding score
-  const canvas = document.getElementById("canvas");
+  const canvas = document.getElementById("game");
   const ctx = canvas.getContext("2d");
   ctx.font = "50px serif";
   ctx.fillText("Score", 50, 90);                         
