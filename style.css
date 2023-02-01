@@ -11,5 +11,7 @@ html, body {
     flex-direction: column;
 
   }
+  p {  font-size: 0.875em; }
+
 
   #score{color: purple}
