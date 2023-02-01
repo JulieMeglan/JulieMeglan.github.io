@@ -103,11 +103,13 @@ function loop() {
   if ( (ball.x < 0 || ball.x > canvas.width) && !ball.resetting) {
     ball.resetting = true;
     
-      if (ball.x < 0)
-        scorePlayer1++; 
+      if (ball.x < 0) {
+        scorePlayer1++;
+      }
     
-      if (ball.x > canvas.width)
+      if (ball.x > canvas.width) {
         scorePlayer2++; 
+      }
     
       score.innerText = `${scorePlayer1}: ${scorePlayer2}`
 
