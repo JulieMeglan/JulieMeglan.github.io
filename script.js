@@ -95,8 +95,8 @@ function loop() {
   }
   
   //adding score
-  let scorePlayer1 = 0; 
-  let scorePlayer2 = 0; 
+  var scorePlayer1 = 0; 
+  var scorePlayer2 = 0; 
   const score = document.getElementById('score');
   
   // reset ball if it goes past paddle (but only if we haven't already done so)
@@ -181,12 +181,7 @@ document.addEventListener('keyup', function(e) {
   if (e.which === 83 || e.which === 87) {
     leftPaddle.dy = 0;
   }
-}
- // adding score
-  const canvas = document.getElementById("game");
-  const ctx = canvas.getContext("2d");
-  ctx.font = "50px serif";
-  ctx.fillText("Score", 50, 90);                         
+}                 
 );
 
 // start the game
