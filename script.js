@@ -93,10 +93,24 @@ function loop() {
     ball.y = canvas.height - grid * 2;
     ball.dy *= -1;
   }
-
+  
+  //adding score
+  let scorePlayer1
+  let scorePlayer2
+  const score = document.getElementById('scoreboard');
+  
   // reset ball if it goes past paddle (but only if we haven't already done so)
   if ( (ball.x < 0 || ball.x > canvas.width) && !ball.resetting) {
     ball.resetting = true;
+    
+      if (ball.x < 0)
+        scorePlayer1++; 
+    
+      if (ball.x > canvas.width)
+        scorePlayer2++; 
+    
+      score.innerText = `${scorePlayer1}: ${scorePlayer2}`
+
 
     // give some time for the player to recover before launching the ball again
     setTimeout(() => {
