@@ -167,7 +167,13 @@ document.addEventListener('keyup', function(e) {
   if (e.which === 83 || e.which === 87) {
     leftPaddle.dy = 0;
   }
-});
+}
+ // adding score
+  const canvas = document.getElementById("canvas");
+  const ctx = canvas.getContext("2d");
+  ctx.font = "50px serif";
+  ctx.fillText("Score", 50, 90);                         
+);
 
 // start the game
 requestAnimationFrame(loop);
