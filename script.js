@@ -99,6 +99,10 @@ function loop() {
     ball.dy *= -1;
   }
   
+  // Left Paddle moves by itself
+  leftPaddle.dy = 3/4 *ball.dy;
+
+
   // reset ball if it goes past paddle (but only if we haven't already done so)
   if ( (ball.x < 0 || ball.x > canvas.width) && !ball.resetting) {
     ball.resetting = true;
