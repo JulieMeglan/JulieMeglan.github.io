@@ -122,6 +122,12 @@ function loop() {
     }, 400);
   }
 
+  //GameOver 
+  if(scorePlayer1 >= 7 || scorePlayer2 >= 7){
+    clearInterval(this.loop);
+    window.location.href = "gameover.html";
+  }
+
   // check to see if ball collides with paddle. if they do change x velocity
   if (collides(ball, leftPaddle)) {
     ball.dx *= -1;
@@ -165,13 +171,13 @@ document.addEventListener('keydown', function(e) {
   }
 
   // w key
-  if (e.which === 87) {
-    leftPaddle.dy = -paddleSpeed;
-  }
+  //if (e.which === 87) {
+  // leftPaddle.dy = -paddleSpeed;
+  //}
   // a key
-  else if (e.which === 83) {
-    leftPaddle.dy = paddleSpeed;
-  }
+  //else if (e.which === 83) {
+  //  leftPaddle.dy = paddleSpeed;
+  //}
 });
 
 // listen to keyboard events to stop the paddle if key is released
